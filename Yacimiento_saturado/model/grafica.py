@@ -1,10 +1,8 @@
 import matplotlib.pyplot as plt
 
 
-def crear_grafica(Qo, PWf):  # Renombramos a 'crear_grafica' para mayor claridad
-    """
-    Genera la figura de Matplotlib para la IPR y la devuelve.
-    """
+def crear_grafica(Qo, PWf):
+
     fig = plt.figure(figsize=(8, 5))  # Asignamos la figura a una variable
 
     # 1. Creamos los ejes
@@ -19,7 +17,4 @@ def crear_grafica(Qo, PWf):  # Renombramos a 'crear_grafica' para mayor claridad
     ax.set_ylabel('PWf (Presión en el fondo del pozo, psi)')
     ax.grid(True)
     ax.legend()
-
-    # NOTA IMPORTANTE: Quitamos plt.show()
-
-    return fig  # Devolvemos el objeto de la figura
+    return fig
